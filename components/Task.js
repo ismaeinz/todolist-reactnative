@@ -5,7 +5,7 @@ export const Task = ({ text }) => {
     <View style={styles.item}>
       <View style={styles.itemLeft}>
         <TouchableOpacity style={styles.square}></TouchableOpacity>
-        <Text style={styles.itemText}>This is A Task {text}</Text>
+        <Text style={styles.itemText}>{text}</Text>
       </View>
       <View style={styles.circular}></View>
     </View>
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "space-between",
     marginBottom: 20,
   },
 
